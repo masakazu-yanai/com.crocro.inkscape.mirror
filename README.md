@@ -1,4 +1,4 @@
-com.crocro.inkscape.center
+com.crocro.inkscape.mirror
 ==========================
 
 「Inkscape」用のエクステンションです。選択したオブジェクトの、X座標0の位置を基準にした、鏡像コピーを作成します。
