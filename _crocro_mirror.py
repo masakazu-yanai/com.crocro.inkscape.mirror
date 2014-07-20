@@ -43,7 +43,6 @@ class CroCro_Mirror(inkex.Effect):
 		parentnode = self.current_layer
 
 		# 選択要素を取得
-		# グループ内のtransformを展開
 		sel = self.selected
 		# inkex.debug('>> ' + ' '.join(_(v) for v in sel))
 
