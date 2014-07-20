@@ -6,8 +6,8 @@ Copyright (C) 2014 Masakazu yanai, yanai@crocro.com
 http://crocro.com/
 
 crocro_mirror.inx
-「Inkscape」用のエクステンションです。選択したオブジェクトの、
-X座標0の位置を基準にした、鏡像コピーを作成します。
+「Inkscape」用のエクステンションです。X座標0位置を基準にして、
+選択オブジェクトの鏡像コピーを作成します。
 
 本スクリプトは、「Inkscape」用の基本的なエクステンションを利用しています。
 そのため、GPLライセンス下で公開されます。
