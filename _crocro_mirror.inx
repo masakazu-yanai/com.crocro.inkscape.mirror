@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<_name>CroCro Mirror</_name>
+	<id>com.crocro.inkscape.mirror</id>
+	<dependency type="executable" location="extensions">_crocro_mirror.py</dependency>
+	<effect>
+		<object-type>all</object-type>
+		<effects-menu>
+			<submenu _name="CroCro"/>
+		</effects-menu>
+	</effect>
+	<script>
+		<command reldir="extensions" interpreter="python">_crocro_mirror.py</command>
+	</script>
+</inkscape-extension>
