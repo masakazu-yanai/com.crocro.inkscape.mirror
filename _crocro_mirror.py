@@ -32,32 +32,32 @@ from copy import deepcopy
 _ = str
 
 class CroCro_Mirror(inkex.Effect):
-	def __init__(self):
-		inkex.Effect.__init__(self)
+    def __init__(self):
+        inkex.Effect.__init__(self)
 
-	def effect(self):
-		# 選択要素がなければ終了
-		if len(self.selected) <= 0: return
+    def effect(self):
+        # 選択要素がなければ終了
+        if len(self.selected) <= 0: return
 
-		# 親ノード
-		parentnode = self.current_layer
+        # 親ノード
+        parentnode = self.current_layer
 
-		# 選択要素を取得
-		sel = self.selected
-		# inkex.debug('>> ' + ' '.join(_(v) for v in sel))
+        # 選択要素を取得
+        sel = self.selected
+        # inkex.debug('>> ' + ' '.join(_(v) for v in sel))
 
-		# 変形マトリクスの作成
-		transformation = 'scale(-1, 1)'
-		transform = simpletransform.parseTransform(transformation)
+        # 変形マトリクスの作成
+        transformation = 'scale(-1, 1)'
+        transform = simpletransform.parseTransform(transformation)
 
-		# 複製と変形マトリクスの適用
-		for id, node in sel.iteritems():
-			childNode = deepcopy(node)
-			parentnode.append(childNode)
-			simpletransform.applyTransformToNode(transform, childNode)
+        # 複製と変形マトリクスの適用
+        for id, node in sel.iteritems():
+            childNode = deepcopy(node)
+            parentnode.append(childNode)
+            simpletransform.applyTransformToNode(transform, childNode)
 
 # インスタンスの初期化と実行
 if __name__ == '__main__':
-	e = CroCro_Mirror()
-	e.affect()
+    e = CroCro_Mirror()
+    e.affect()
 
